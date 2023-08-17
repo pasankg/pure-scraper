@@ -1,0 +1,18 @@
+{
+    "name": "pasangamage/scraper",
+    "description": "Website scraping demo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Scraper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pasan"
+        }
+    ],
+    "require": {
+        "voku/simple_html_dom": "^4.8"
+    }
+}

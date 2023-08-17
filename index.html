@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Scraper Demo</title>
+ <!-- Load custom scripts -->
+ <script type="module" src="src/js/custom/keyword_script.js"></script>
+ <!-- <script type="module" src="src/js/custom/news_script.js"></script> -->
+
+ <!-- Load JS libraries -->
+ <script src="src/js/library/code.jquery.com_jquery-3.7.0.js"></script>
+ <script src="src/js/library/code.highcharts.com_highcharts.js"></script>
+ <script src="src/js/library/cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js"></script>
+ <script src="src/js/library/cdn.datatables.net_select_1.7.0_js_dataTables.select.min.js"></script>
+
+ <!-- Load Style libraries -->
+ <link rel="stylesheet" href="src/css/library/cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" />
+ <link rel="stylesheet" href="src/css/library/cdn.datatables.net_select_1.7.0_css_select.dataTables.min.css" />
+ <link rel="stylesheet" href="src/css/library/code.highcharts.com_css_highcharts.css" />
+ <link rel="stylesheet"
+  href="src/css/library/cdnjs.cloudflare.com_ajax_libs_twitter-bootstrap_4.5.2_css_bootstrap.css" />
+  <link rel="stylesheet" href="src/css/custom/style.css" />
+</head>
+
+<body>
+ <div class="container" style="padding-top: 5rem;">
+  <div class="row">
+   <div class="col">
+    <h1>Trends</h1>
+    <div id="trend-pie" style="margin-bottom: 1em" class="chart-display"></div>
+
+    <table id="trend-table" class="display table" style="width: 100%">
+     <thead class="thead-dark">
+      <tr>
+       <th>Trend</th>
+       <th>Count</th>
+      </tr>
+     </thead>
+     <tbody id="trend-table-body">
+      <!-- content loaded here -->
+     </tbody>
+    </table>
+   </div>
+   <div class="col">
+    <h1>Keywords</h1>
+    <table id="keyword-table" class="display" style="width: 100%">
+     <thead>
+      <tr>
+       <th>Keyword</th>
+       <th>Count</th>
+      </tr>
+     </thead>
+     <tbody id="keyword-table-body">
+      <!-- content loaded here -->
+     </tbody>
+     <tfoot>
+      <tr>
+       <th>Keyword</th>
+       <th>Count</th>
+      </tr>
+     </tfoot>
+    </table>
+   </div>
+  </div>
+  <div class="clearfix"></div>
+  <h1>News</h1>
+  <table id="news-table" class="display" style="width: 100%">
+   <thead>
+    <tr>
+     <th>Title</th>
+     <th>Summary</th>
+    </tr>
+   </thead>
+   <tbody id="news-table-body">
+    <!-- content loaded here -->
+   </tbody>
+   <tfoot>
+    <tr>
+     <th>Title</th>
+     <th>Summary</th>
+    </tr>
+   </tfoot>
+  </table>
+ </div>
+ <script src="src/js/custom/trigger.js"></script>
+</body>
+
+</html>
